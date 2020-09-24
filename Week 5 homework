@@ -1,16 +1,16 @@
-import sys
+#import sys
 def add_them_all(filename):
     sum = 0
-    contents= open('filename.txt', 'r')
-    contents = filename.readline()
+    contents= open(filename, 'r')
+    contentslist = filename.readline()
     splitter_list = contents.split()
     for x in splitterlist:
-        sum=sum + x
+        sum= sum + int(x)
     return sum 
     
         
     
-    return sum
+   
 if __name__ == "__main__":
     fname = sys.argv[1]
     print(f"Processing {fname}")
